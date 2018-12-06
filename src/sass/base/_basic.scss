@@ -1,0 +1,32 @@
+.bold {
+  font-weight: $bold;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__title {
+    color: $heading-color;
+    font-size: 60px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    margin: 0 0 40px 0;
+  }
+
+  &__separate-line {
+    width: 30px;
+    border-bottom: 1px solid $accent-color;
+    margin: 0 auto;
+  }
+
+  &__sub-title {
+    font-family: 'Montserrat', sans-serif;
+    color: $paragraph-color;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 40px 0;
+  }
+}

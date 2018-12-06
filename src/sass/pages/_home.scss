@@ -33,7 +33,7 @@ body {
           width: 100%;
           text-align: center;
 
-          h1 {
+          .main-heading {
             font-family: 'Montserrat', sans-serif;
             font-size: 60px;
             font-weight: 200;
@@ -41,11 +41,7 @@ body {
             margin: 0 0 30px;
           }
 
-          .bold {
-            font-weight: $bold;
-          }
-
-          p {
+          .sub-heading {
             font-family: 'Montserrat', sans-serif;
             font-size: 24px;
             font-weight: 300;
@@ -88,17 +84,17 @@ body {
         &-item {
           display: flex;
           margin: 0 5px;
+        }
 
-          .circle {
-            width: 10px;
-            height: 10px;
-            border: 2px solid $white;
-            border-radius: 100%;
-          }
+        .circle {
+          width: 10px;
+          height: 10px;
+          border: 2px solid $white;
+          border-radius: 100%;
+        }
 
-          .active {
-            background: $white;
-          }
+        .active {
+          background: $white;
         }
       }
     }
