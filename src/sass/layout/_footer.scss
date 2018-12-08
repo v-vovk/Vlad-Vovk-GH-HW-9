@@ -1,0 +1,64 @@
+footer {
+  width: 100%;
+  min-height: 700px;
+  height: 100%;
+  background: $white url('../img/logo-bg.png') center top no-repeat;
+  color: $white;
+  padding: 50px 0 0;
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+
+    .main-nav {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $paragraph-color;
+
+        img {
+          margin: 0 20px 0;
+        }
+
+        .copy {
+          font-size: 18px;
+        }
+      }
+
+      .nav {
+        display: inherit;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+          position: relative;
+          margin: 0 30px;
+        }
+
+        li:last-of-type {
+          margin: 0 0 0 30px;
+        }
+
+        a {
+          text-decoration: none;
+          color: $paragraph-color;
+          font-size: 18px;
+          font-weight: 200;
+          cursor: pointer;
+        }
+
+        a:hover {
+          opacity: 0.8;
+          color: $heading-color;
+        }
+      }
+    }
+  }
+}
