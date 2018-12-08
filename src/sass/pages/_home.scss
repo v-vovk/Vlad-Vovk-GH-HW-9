@@ -109,6 +109,9 @@ body {
     .fa-angle-down:hover {
       opacity: 1;
       color: $accent-color;
+      transition: 0.3s;
+      transition-property: color;
+      box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.15);
     }
   }
 }
@@ -152,6 +155,9 @@ body {
       &__image:hover {
         background-color: $accent-color;
         opacity: 1;
+        transition: 0.5s;
+        transition-property: background-color;
+        box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.15);
       }
 
       &__title {
@@ -258,6 +264,9 @@ body {
 
       .fas:hover {
         color: $accent-color;
+        transition: 0.3s;
+        transition-property: background-color;
+        box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.15);
       }
     }
 
@@ -347,6 +356,55 @@ body {
           margin: 0;
         }
       }
+    }
+  }
+}
+
+.meet-our-team {
+  padding: 110px 0 0;
+
+  .container {
+    margin: 0 auto 70px;
+  }
+
+  .team-photo {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__card {
+      margin: 0;
+      position: relative;
+      width: 20%;
+      padding-top: 20%; /* 1:1 Aspect Ratio */
+      background: $paragraph-color url('../img/user-photo.png') center center no-repeat;
+
+      &__title {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        background: rgba(23, 218, 163, 0.8);
+        padding: 20px;
+        display: none;
+      }
+
+      .name {
+        color: $white;
+        font-size: 36px;
+        font-weight: 200;
+        text-align: center;
+      }
+    }
+
+    &__card:hover .team-photo__card__title{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      transition-property: background;
+      transition: 0.5s;
     }
   }
 }
